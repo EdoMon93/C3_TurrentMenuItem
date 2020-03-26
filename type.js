@@ -1,9 +1,9 @@
 "use strict";
 
 {
-	const BEHAVIOR_CLASS = SDK.Behaviors.MyCompany_MyBehavior;
+	const TMI_BEHAVIOR_CLASS = SDK.Behaviors.Pozzanghera_TurretMenuItem;
 	
-	BEHAVIOR_CLASS.Type = class MyCustomBehaviorType extends SDK.IBehaviorTypeBase
+	TMI_BEHAVIOR_CLASS.Type = class TurretMenuItemType extends SDK.IBehaviorTypeBase
 	{
 		constructor(sdkPlugin, iBehaviorType)
 		{

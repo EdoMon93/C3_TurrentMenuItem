@@ -7,7 +7,7 @@
 	"author": "Pozzanghera",
 	"website": "https://www.pozzanghera.com",
 	"documentation": "https://www.construct.net",
-	"description": "Construct 3 behavior for items in side menus.",
+	"description": "Construct 3 behavior for placing items from side menus.",
 	"editor-scripts": [
 						"behavior.js",
 						"type.js",

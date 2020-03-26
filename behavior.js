@@ -9,13 +9,13 @@
 	// Only the behavior name is displayed in the editor, so to rename your behavior change the name but NOT the ID.
 	// If you want to completely replace a behavior, make it deprecated (it will be hidden but old projects keep working),
 	// and create an entirely new behavior with a different behavior ID.
-	const BEHAVIOR_ID = "MyCompany_MyBehavior";
+	const BEHAVIOR_ID = "Pozzanghera_TurretMenuItem";
 	////////////////////////////////////////////
 	
-	const BEHAVIOR_VERSION = "1.0.0.0";
-	const BEHAVIOR_CATEGORY = "general";
+	const BEHAVIOR_VERSION = "0.1.0.0";
+	const BEHAVIOR_CATEGORY = "other";
 	
-	const BEHAVIOR_CLASS = SDK.Behaviors.MyCompany_MyBehavior = class MyCustomBehavior extends SDK.IBehaviorBase
+	const TMI_BEHAVIOR_CLASS = SDK.Behaviors.Pozzanghera_TurretMenuItem = class TurretMenuItemBehavior extends SDK.IBehaviorBase
 	{
 		constructor()
 		{
@@ -27,7 +27,7 @@
 			this._info.SetDescription(lang(".description"));
 			this._info.SetVersion(BEHAVIOR_VERSION);
 			this._info.SetCategory(BEHAVIOR_CATEGORY);
-			this._info.SetAuthor("Scirra");
+			this._info.SetAuthor("Pozzanghera");
 			this._info.SetHelpUrl(lang(".help-url"));
 			this._info.SetIsOnlyOneAllowed(true);
 			
@@ -36,6 +36,7 @@
 			
 			SDK.Lang.PushContext(".properties");
 			
+			// Define properties 
 			this._info.SetProperties([
 				new SDK.PluginProperty("integer", "test-property", 0)
 			]);
@@ -46,5 +47,5 @@
 		}
 	};
 	
-	BEHAVIOR_CLASS.Register(BEHAVIOR_ID, BEHAVIOR_CLASS);
+	TMI_BEHAVIOR_CLASS.Register(BEHAVIOR_ID, TMI_BEHAVIOR_CLASS);
 }

@@ -3,9 +3,9 @@
 	"fileDescription": "Strings for MyCustomBehavior.",
 	"text": {
 		"behaviors": {
-			"mycompany_mybehavior": {
-				"name": "MyCustomBehavior",
-				"description": "An example third-party behavior.",
+			"Pozzanghera_TurretMenuItem": {
+				"name": "TurretMenuItemBehavior",
+				"description": "Construct 3 behavior for placing items from side menus.",
 				"help-url": "https://www.construct.net",
 				"properties": {
 					"test-property": {
